@@ -4,7 +4,11 @@ Este é um projeto simples de To-do List feito em JavaScript, HTML e CSS. Ele pe
 
 ## ▶️ Demonstração
 
-![Demonstração do Projeto](assets/to-do-list2.png)
+<div align="center">
+
+![Demonstração do Projeto](assets/to-do-list.gif)
+
+</div>
 
 ## ⚙️ Funcionalidades
 
@@ -14,13 +18,13 @@ Este é um projeto simples de To-do List feito em JavaScript, HTML e CSS. Ele pe
 - Marcar uma tarefa como concluída.
 - Filtrar tarefas entre **"Concluídas"** e **"A Fazer"**.
 - Pesquisar tarefas por nome.
-- Armazenamento das tarefas no localStorage do navegador.
+- Armazenamento das tarefas no `localStorage` do navegador.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **JavaScript**: Lógica do aplicativo.
-- **HTML**: Estrutura da página.
-- **CSS**: Estilização da interface.
+- **`JavaScript`**: Lógica do aplicativo.
+- **`HTML`**: Estrutura da página.
+- **`CSS`**: Estilização da interface.
 
 ## 🚀 Como Usar
 

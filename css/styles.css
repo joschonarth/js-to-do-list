@@ -1,156 +1,226 @@
 /* Geral */
-
 :root {
-    --main-color: #ff5945;
+    --main-color: #8c3fff;
+    --secondary-color: #61ffca;
+    --text-color: #e0e0e0;
+    --background-gradient: linear-gradient(135deg, #8c3fff, #61ffca);
+    --border-color: #4a4a4a;
+    --highlight-color: #7ab4d4;
+    --border-radius: 10px;
+    --icon-color: #1c1c1c;
 }
 
 * {
     padding: 0;
     margin: 0;
-    font-family: Verdana;
-    color: #333;
+    font-family: 'Consolas', monospace;
+    color: var(--text-color);
     box-sizing: border-box;
 }
 
 body {
-    background: var(--main-color);
-    background-position: center;
+    background: var(--background-gradient);
     background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 2rem;
 }
 
+/* Botões */
 button {
-    background-color: #fff;
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
-    padding: .3rem .6rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: 0.4s;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: var(--main-color);
-    color: #fff;
-}
-
-button:hover > i {
-    color: #fff;
+    color: var(--text-color);
 }
 
 button i {
-    color: var(--main-color);
-    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--icon-color);
     pointer-events: none;
 }
 
+/* Inputs */
 input, select {
-    padding: 5px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    background-color: #3e3e3e;
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--highlight-color);
 }
 
 .hide {
     display: none;
 }
 
-/* To-Do Header */
+/* To-Do Container */
 .todo-container {
-    max-width: 450px;
-    margin: 3rem auto;
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 15px;
+    max-width: 500px;
+    margin: 4rem auto;
+    background-color: #333;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .todo-container header {
     text-align: center;
-    padding: 0 1rem 1rem;
-    border-bottom: 1x solid #ccc;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--main-color);
 }
 
-/* To-Do Form */
+/* Formulários */
 #todo-form, #edit-form {
-    padding: 1rem;
-    border-bottom: 1px solid #ccc;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
 }
 
 #todo-form p,
 #edit-form p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     font-weight: bold;
+    color: var(--main-color);
+    font-size: 1.2rem;
 }
 
 .form-control {
     display: flex;
+    gap: 0.5rem;
 }
 
 .form-control input {
-    margin-right: 0.3rem;
+    flex: 1;
 }
 
 #cancel-edit-btn {
     margin-top: 1rem;
+    background-color: var(--main-color);
+    color: var(--text-color);
 }
 
-/* To-Do TollBar */
+/* Toolbar */
 #toolbar {
-    padding: 1rem;
-    border-bottom: 1px solid #ccc;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
     display: flex;
-}
-
-#toolbar h4 {
-    margin-bottom: .5rem;
+    gap: 2rem;
 }
 
 #search {
-    border-right: 1px solid #ddd;
-    padding-right: 1rem;
-    margin-right: 1rem;
-    width: 65%;
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+}
+
+#search h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
 }
 
 #search form {
     display: flex;
+    align-items: center;
 }
 
 #search input {
-    width: 100%;
-    margin-right: 0.3rem;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    background-color: #3e3e3e;
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+#search button {
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin-left: 0;
+}
+
+#search button:hover {
+    background-color: var(--secondary-color);
 }
 
 #filter {
-    width: 35%;
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+}
+
+#filter h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
 }
 
 #filter select {
-    flex: 1;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    background-color: #3e3e3e;
+    color: var(--text-color);
+    border-radius: var(--border-radius);
 }
 
-/* To-Do List */
+/* Lista de Tarefas */
 .todo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-bottom: 1px solid #ddd;
-    transition: .3s;
+    margin: 0.5rem 0;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: #3e3e3e;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo:hover {
+    background-color: rgba(0, 128, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .todo h3 {
     flex: 1;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    color: var(--text-color);
 }
 
 .todo button {
-    margin-left: 0.4rem;
+    margin-left: 0.5rem;
 }
 
+/* Tarefas concluídas */
 .done {
     background-color: var(--main-color);
 }
