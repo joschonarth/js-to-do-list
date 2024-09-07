@@ -2,7 +2,7 @@
 
 Este é um projeto simples de To-do List feito em JavaScript, HTML e CSS. Ele permite que os usuários adicionem, removam, editem, filtrem e pesquisem tarefas, além de armazená-las no localStorage do navegador.
 
-## ▶️ Demonstração
+## 🎥 Demonstração
 
 <div align="center">
 
