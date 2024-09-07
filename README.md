@@ -28,15 +28,15 @@ Este é um projeto simples de To-do List feito em JavaScript, HTML e CSS. Ele pe
 
 ## 🚀 Como Usar
 
-1. Clone o repositório:
+📌 **1.** Clone o repositório:
 
 ```bash
 git clone https://github.com/joschonarth/js-to-do-list
 ```
 
-2. Abra o arquivo `index.html` em um navegador.
+📌 **2.** Abra o arquivo `index.html` em um navegador.
 
-3. Utilize a interface para:
+📌 **3.** Utilize a interface para:
 
 * Adicionar novas tarefas.
 * Marcar ou desmarcar tarefas como concluídas.
@@ -45,7 +45,7 @@ git clone https://github.com/joschonarth/js-to-do-list
 * Filtrar tarefas entre "Concluídas" e "A Fazer".
 * Pesquisar uma tarefa específica pelo nome.
 
-4. As tarefas são automaticamente salvas no localStorage e persistem entre as sessões.
+📌 **4.** As tarefas são automaticamente salvas no localStorage e persistem entre as sessões.
 
 ## 🗂️ Estrutura do Projeto
 
