@@ -26,6 +26,14 @@ Este é um projeto simples de To-do List feito em JavaScript, HTML e CSS. Ele pe
 - **`HTML`**: Estrutura da página.
 - **`CSS`**: Estilização da interface.
 
+## 🌐 Teste o Projeto
+
+Você pode testar o projeto acessando o link abaixo:
+
+[**🔗 Acesse o To-Do List Online**](https://js-to-do-list-silk.vercel.app/)
+
+[![Demonstração do Projeto](assets/to-do-list.png)](https://js-to-do-list-silk.vercel.app/)
+
 ## 🚀 Como Usar
 
 📌 **1.** Clone o repositório:
